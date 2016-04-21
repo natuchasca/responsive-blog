@@ -1,0 +1,166 @@
+/* GLOBAL */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+ }
+
+/* Grid system */
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin: 0 auto;
+  max-width: 1280px;
+  width: 90%;
+}
+
+@media (max-width: 767px) {
+	.container {
+	    margin:0 !important;
+	    padding:0 !important;
+	}
+
+	.row {
+	    margin:0 !important;
+	    padding:0 !important;
+	}	
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+.row {
+	width: 100%;
+	margin-left: -14px;
+	margin-right: -14px;
+	margin-bottom: 20px;
+}
+
+.row:before, .row:after{
+  content: " ";
+  display: table;
+}
+
+.row:after {
+  clear: both;
+}
+
+[class*="col-"] {
+	min-height: 7px;
+	padding: 0 14px;
+	float: left;
+}
+
+.col-1 {
+	/* (1 / 12) x 100 */
+	width: 8.333333%;
+} 
+
+.col-2 {
+	/* (2 / 12) x 100 */
+	width: 16.666667%;
+} 
+
+.col-3 {
+	/* (3 / 12) x 100 */
+	width: 25%;
+} 
+
+.col-4 {
+	/* (4 / 12) x 100 */
+	width: 33.333333%;
+}
+
+.col-5 {
+	/* (5 / 12) x 100 */
+	width: 41.666667%;
+}
+
+.col-6 {
+	/* (6 / 12) x 100 */
+	width: 50%;
+} 
+
+.col-7 {
+	/* (7 / 12) x 100 */
+	width: 58.333333%;
+}
+
+.col-8 {
+	/* (8 / 12) x 100 */
+	width: 66.666667%;
+}
+
+.col-9 {
+	/* (9 / 12) x 100 */
+	width: 75%;
+}
+
+.col-10 {
+	/* (10 / 12) x 100 */
+	width: 83.333333%;
+}
+
+.col-11 {
+	/* (11 / 12) x 100 */
+	width: 91.666667%;
+}
+
+.col-12 {
+	/* (12 / 12) x 100 */
+	width: 100%;
+}
+
+.col-offset-1 {
+  margin-left: 8.3333333333%;
+}
+.col-offset-2 {
+  margin-left: 16.6666666667%;
+}
+.col-offset-3 {
+  margin-left: 25%;
+}
+.col-offset-4 {
+  margin-left: 33.3333333333%;
+}
+.col-offset-5 {
+  margin-left: 41.6666666667%;
+}
+.col-offset-6 {
+  margin-left: 50%;
+}
+.col-offset-7 {
+  margin-left: 58.3333333333%;
+}
+.col-offset-8 {
+  margin-left: 66.6666666667%;
+}
+.col-offset-9 {
+  margin-left: 75%;
+}
+.col-offset-10 {
+  margin-left: 83.3333333333%;
+}
+.col-offset-11 {
+  margin-left: 91.6666666667%;
+}
+.col-offset-12 {
+  margin-left: 100%;
+}
+.col img{
+	max-width: 100%;
+}
