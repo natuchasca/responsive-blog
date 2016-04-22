@@ -233,6 +233,10 @@ a.purple {
 		width: 250%;
 		display: block;
 	}
+
+	.col-3 {
+		width: 100%;
+	}
 	
 	nav {
 		clear: both;
@@ -254,7 +258,7 @@ a.purple {
 }
 
 
-/*
+
 @media screen and (max-width: 600px) {
 	
 	body {
@@ -264,6 +268,7 @@ a.purple {
 
     .container {
 		width: 90%;
+		max-width: 600px;
 	}
 
 	header {
@@ -277,17 +282,24 @@ a.purple {
 	
 	.logo {
 		width: 400%;
-		display: block;
-		clear: both;
-	}
-
-	.col-bp {
-		display: block;
-		clear: both;
 	}
 	
 	.portada {
+		width: 100%;
 		display: flex;
 	}
+
+	.cuadro {
+		width: 300%;
+		display: block;
+	}
+
+	.seccion1 {
+		width: 170%;
+	}
+
+	.seccion2 {
+    display: none;
+  	}
 
 }
