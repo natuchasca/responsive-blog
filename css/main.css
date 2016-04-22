@@ -113,16 +113,22 @@ div.cuadro {
 .seccion1 {
 	background-color: #100C15;
 	color: white;
-	width: 100%;
+	width: 110%;
 	margin-bottom: 40px;
+	padding: 20px 20px;
 }
 
 p.normal {
 	margin-bottom: 20px;
 }
 
+.seccion1 img {
+	width: 100%;
+}
+
 iframe {
 	margin-bottom: 20px;
+	width: 100%;
 }
 
 
@@ -157,6 +163,7 @@ div.about {
 	color: white;
 	margin: 20px 0;
 	padding: 20px 0;
+	border-radius: 10px;
 }
 
 .about img {
@@ -179,11 +186,12 @@ p.description {
 	margin: 0 auto;
 }
 
-i {
+i.fa {
 	font-size: 30px;
 	background-color: #281D33;
 	padding: 10px 10px;
-	border-radius: 20px;
+	margin: 0 5px;
+	border-radius: 30px;
 }
 
 i:hover {
@@ -212,9 +220,74 @@ a.purple {
 /* Responsive */
 
 @media screen and (max-width : 920px) {
+	body {
+		width: 920px;
+	}
+
+	.container {
+		width: 90%;
+		max-width: 920px;
+	}
+
+	.logo {
+		width: 250%;
+		display: block;
+	}
+	
+	nav {
+		clear: both;
+	}
+
+	.portada {
+		width: 100%;
+		display: flex;
+	}
+	
+	.seccion1 {
+		width: 175%;
+	}
+
+	.seccion2 {
+    display: none;
+  	}
 
 }
 
+
+/*
 @media screen and (max-width: 600px) {
+	
+	body {
+		background-color: red;
+		width: 600px;
+	}
+
+    .container {
+		width: 90%;
+	}
+
+	header {
+		width: 100%;
+		height: auto;
+	}
+	
+	nav {
+		display: none;
+	}
+	
+	.logo {
+		width: 400%;
+		display: block;
+		clear: both;
+	}
+
+	.col-bp {
+		display: block;
+		clear: both;
+	}
+	
+	.portada {
+		display: flex;
+	}
 
 }
