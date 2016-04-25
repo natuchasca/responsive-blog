@@ -28,6 +28,10 @@ img {
 	height: auto;
 }
 
+.fa-bars {
+    display: none;
+  	}
+
 nav {
 	text-align: right;
 }
@@ -227,20 +231,22 @@ a.purple {
 	.container {
 		width: 90%;
 		max-width: 920px;
+		vertical-align: 
 	}
 
 	.logo {
 		width: 250%;
 		display: block;
 	}
-
-	.col-3 {
-		width: 100%;
-	}
 	
 	nav {
 		clear: both;
+		display: block;
 	}
+	
+	.fa-bars {
+    display: none;
+  	}
 
 	.portada {
 		width: 100%;
@@ -280,22 +286,52 @@ a.purple {
 		display: none;
 	}
 	
+	.fa-bars {
+		color: white;
+		float: right;
+		font-size: 30px;
+		padding: 10px 10px;
+		margin: 0 5px;
+		border-radius: 30px;
+  	}
+
+	.fa-bars:hover {
+    	background-color: #281D33; 
+		color: #E3AB51;
+		cursor: pointer;
+  	}
+	
 	.logo {
 		width: 400%;
 	}
 	
 	.portada {
+		width: 110%;
+		margin: 0 auto;
+	}
+	
+	.imagenes-3 {
 		width: 100%;
-		display: flex;
+		max-width: 600px;
+		display: inline-block;
 	}
 
-	.cuadro {
+	.cuadro-big {
+		width: 90%;
+		margin: 0 auto;
+		margin-left: 3%;
+		clear: both
+	}
+
+	.col-bp .cuadro{
 		width: 300%;
-		display: block;
+		display: inline-block;
+		text-align: center;
 	}
 
 	.seccion1 {
-		width: 170%;
+		width: 180%;
+		margin-left: 5%;
 	}
 
 	.seccion2 {
